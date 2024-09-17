@@ -1,0 +1,288 @@
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInb {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-inb {
+  opacity: 0;
+  animation: fadeInb 1s ease-in-out forwards;
+   display: flex;
+  flex-direction: column; /* Align items vertically */
+  height: auto; /* Ensure the container takes full height */
+
+    background-blend-mode: luminosity;
+}
+
+.rec { 
+  margin-top: auto;
+ }
+
+ .farm-placeholder {
+
+ }
+
+ .inline-p {
+display: inline-block;
+ }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+   
+  }
+}
+
+.fade-out {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/* Base styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.max-w-full > div {
+   min-height: 900px;
+   min-width: 700px;
+}
+.mapimg {
+  background: url('resources/mapbk.jpg');
+  animation:animation_loading 100s linear infinite;
+   min-width: 600px;
+  
+}
+
+.sidebar {
+  min-width: 300px;
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Card styles */
+.card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="number"] {
+
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: #000;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles */
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+p {
+  font-size: .9em;
+}
+/* Toggle button styles */
+.toggle-button {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.toggle-button.active {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Icon styles */
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Visualization area */
+.visualization {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Crop entry styles */
+.crop-entry {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .visualization-section,
+  .input-section {
+    width: 100% !important;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Utility classes */
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.p-4 {
+  padding: 1rem;
+  height: fit-content;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-black  {
+  background-color: #f1f1f1 !important;
+    border: 1px solid lightgray !important;
+}
+
+button:hover {
+  background-color: white;
+}
+
+.title {    
+  max-width: 200px;
+padding: 10px;}
+
+.w-6 {
+  width: 1.5rem;
+}
+.h-6 {
+  height: 1.5rem;
+}
+
+
+.text-gray-600 {
+  border-bottom: 1px solid darkgray;
+}
+
+.yield {
+
+}
+
+.delete {
+  background-color: #f1f1f1;
+    border: 1px solid lightgray;
+    color: black;
+    padding: 0px 10px;
+}
+
+.list-disc {
+  list-style-type: decimal;
+  font-size: .9rem;
+}
+
+
+
+
